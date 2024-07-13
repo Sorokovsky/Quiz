@@ -1,4 +1,4 @@
-import styles from "./pages/index.module.sass";
+import styles from "@styles/index.module.sass";
 
 const Home = (): JSX.Element => {
   return (
