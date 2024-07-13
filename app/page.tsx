@@ -1,9 +1,10 @@
-import styles from "./page.module.sass";
+import styles from "./pages/index.module.sass";
 
-export default function Home() {
+const Home = (): JSX.Element => {
   return (
     <main>
-      
+      Hello World
     </main>
   );
 }
+export default Home;
