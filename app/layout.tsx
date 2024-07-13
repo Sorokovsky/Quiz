@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.sass";
+import "@styles/globals.sass";
+import CustomLayout from "@components/ui/CustomLayout";
 
 export const metadata: Metadata = {
   title: "Quiz game",
@@ -12,9 +13,9 @@ interface Props {
 
 const RootLayout = ({children}: Readonly<Props>) => {
   return ( 
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <CustomLayout>
+      {children}
+    </CustomLayout>
   );
 }
 
